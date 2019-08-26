@@ -12,7 +12,8 @@ This is a fan speed controller for the Raspberry Pi. The main advantages are:
 
 ![LTC1695 Fan Controller](doc/1.jpg  "LTC1695 Fan Controller")
 ![LTC1695 Fan Controller](doc/2.jpg  "LTC1695 Fan Controller")
-The *hat* pcb contains two ic's: U1, an LTC1695 fan controller, and U2, a 24c32 EEPROM. The data in the EEPROM allows Raspbian to identify the hat. If you are making this for yourself, you can safely leave the EEPROM away.  That leaves us with the following components: 
+
+If you look at the [schematic](doc/schematic.pdf) you'll see the *hat* contains only two ic's: U1, an LTC1695 fan controller, and U2, a 24c32 EEPROM. The data in the EEPROM allows Raspbian to identify the hat. If you are making this for yourself, you can safely leave the EEPROM away.  That leaves us with the following components: 
 
 Quant.|Item
 ---|--

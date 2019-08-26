@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name pi_hat-rescue)(type Legacy)(uri ${KIPRJMOD}/pi_hat-rescue.lib)(options "")(descr ""))
+  (lib (name fan_ctrl)(type Legacy)(uri ${KIPRJMOD}/fan_ctrl.lib)(options "")(descr ""))
+)
