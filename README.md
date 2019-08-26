@@ -22,6 +22,7 @@ Quant.|Item
 1|Adafruit Accessories Stacking Header for Raspberry Pi
 1|Sunon MF40200V3-1000U-A99 DC Fan 40mm, 5V.
 
+The fan is 5V DC brushless, 2 wire, **1W max**.
 That's all. 
 
 ## Installation
@@ -71,7 +72,7 @@ Value | Status
 
 ## Running
 
-The *raspbian* directory contains *fanctl.py*, a python script which you can run either interactively or in the background. The values for *fan_min* and *fan_boost* are for the fan I'm using. The values  *temp_min* and *temp_max* represent personal choices. Feel free to modify the script as you wish. Once you are happy with the values, you can add the fan controller to *etc/rc.local* so the fan starts up at boot:
+The *raspbian* directory contains *fanctl.py*, a python script which you can run either interactively or in the background. The values for *fan_min* and *fan_boost* are for the fan I'm using. The values  *temp_min* and *temp_max* represent personal choices. Feel free to modify the script as you wish. Once you are happy with the values, you can add the fan controller to */etc/rc.local* so the fan starts up at boot:
 ```
 /usr/local/bin/fanctl.py &
 ```
