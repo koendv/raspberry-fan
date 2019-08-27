@@ -13,18 +13,17 @@ This is a fan speed controller for the Raspberry Pi. The main advantages are:
 ![LTC1695 Fan Controller](doc/1.jpg  "LTC1695 Fan Controller")
 ![LTC1695 Fan Controller](doc/2.jpg  "LTC1695 Fan Controller")
 
-If you look at the [schematic](doc/schematic.pdf) you'll see the *hat* contains only two ic's: U1, an LTC1695 fan controller, and U2, a 24c32 EEPROM. The data in the EEPROM allows Raspbian to identify the hat. If you are making this for yourself, you can safely leave the EEPROM away.  That leaves us with the following components: 
+If you look at the [schematic](doc/schematic.pdf) you'll see the *hat* contains only two ic's: U1, an LTC1695 fan controller, and U2, a 24c32 EEPROM. The data in the EEPROM allows Raspbian to identify the hat. If you are making this for yourself, you can safely leave the EEPROM out.  That leaves us with the following components: 
 
 Quant.|Item
 ---|--
 1|LTC1695CS5  I2C Fan Speed Controller, SOT-23
 2|KEMET T494B475K020AT Tantalum Capacitor, SMD 20V 4.7uF 1311 10% ESR=1 Ohms
-1|Adafruit Accessories Stacking Header for Raspberry Pi
+1|Adafruit Accessories Header for Raspberry Pi
 1|Sunon MF40200V3-1000U-A99 DC Fan 40mm, 5V.
 
-The fan is 5V DC brushless, 2 wire, **1W max**.
-That's all. 
-
+The fan is 40mm, 5V DC, brushless, 2 wire, **1W max**. 
+Adafruit has two GPIO headers for Raspberry, product numbers 1992 (tall) and  2243 (short). Choose the one that clears the heatsink of the processor.  
 ## Installation
 If you scan the i2c bus, you ought to see the fan controller at address 0x74:
 ```
@@ -44,11 +43,11 @@ You can switch the fan completely on:
 ```
 i2cset -y 1 0x74 63
 ```
-completely off
+completely off:
 ```
 i2cset -y 1 0x74 0
 ```
-or something in between
+or something in between:
 ```
 i2cset -y 1 0x74 32
 ```
