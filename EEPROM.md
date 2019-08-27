@@ -44,4 +44,8 @@ Remove the jumper on JP1. In */boot/config.txt* comment out
 ```
 #dtparam=i2c_vc=on
 ```
-and reboot. 
+and reboot. The hat identification data can now be found in /proc/device-tree/hat :
+```
+$ cat /proc/device-tree/hat/product
+ltc1695 fan
+```
