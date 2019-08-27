@@ -5,8 +5,8 @@
 
 This is a fan speed controller for the Raspberry Pi. The main advantages are: 
 
-1. small number of components: one IC and two capacitors.
-2. low noise
+* small number of components: one IC and two capacitors.
+* low noise
 
 ## Hat
 
@@ -23,7 +23,7 @@ Quant.|Item
 1|Sunon MF40200V3-1000U-A99 DC Fan 40mm, 5V.
 
 The fan is 40mm, 5V DC, brushless, 2 wire, **1W max**. 
-Adafruit has two GPIO headers for Raspberry, product numbers 1992 (tall) and  2243 (short). Choose the one that clears the heatsink of the processor.  
+Adafruit has two GPIO headers for Raspberry, product numbers [1992](https://www.adafruit.com/product/1992) (tall, 16.5 mm) and  [2243](https://www.adafruit.com/product/2243) (short, 5.0 mm). Choose the one that clears the heatsink of the processor. 
 ## Installation
 If you scan the i2c bus, you ought to see the fan controller at address 0x74:
 ```
@@ -71,7 +71,7 @@ Value | Status
 
 ## Running
 
-The *raspbian* directory contains *fanctl.py*, a python script which you can run either interactively or in the background. The values for *fan_min* and *fan_boost* are for the fan I'm using. The values  *temp_min* and *temp_max* represent personal choices. Feel free to modify the script as you wish. Once you are happy with the values, you can add the fan controller to */etc/rc.local* so the fan starts up at boot:
+The ```raspbian``` directory contains ```fanctl.py```, a python script which you can run either interactively or in the background. Feel free to modify the script as you wish. The values for *fan_min* and *fan_boost* are for the fan I'm using. The values  *temp_min* and *temp_max* represent personal choices. Once you are happy with the values, you can add the fan controller to ```/etc/rc.local``` so the fan starts up at boot:
 ```
 /usr/local/bin/fanctl.py &
 ```
