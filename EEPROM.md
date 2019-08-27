@@ -40,7 +40,7 @@ On the fan controller next to the eeprom there's a small jumper  labeled "JP1". 
 ```
 eepflash.sh -w -f=fan_eeprom_settings.eep -t=24c32 -d=0 -a=50
 ```
-Remove the jumper on JP1. In */boot/config.txt* comment out 
+Remove the jumper on JP1. In ```/boot/config.txt``` comment out 
 ```
 #dtparam=i2c_vc=on
 ```
