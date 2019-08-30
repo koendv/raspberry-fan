@@ -2,11 +2,7 @@
 
 ![LTC1695 Fan Controller](doc/3.jpg  "LTC1695 Fan Controller")
 
-
-This is a fan speed controller for the Raspberry Pi. The main advantages are: 
-
-* small number of components: one IC and two capacitors.
-* low noise
+This is a fan speed controller for the Raspberry Pi. 
 
 ## Hat
 
