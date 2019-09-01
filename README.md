@@ -2,7 +2,7 @@
 
 ![LTC1695 Fan Controller](doc/3.jpg  "LTC1695 Fan Controller")
 
-This is a fan speed controller for the Raspberry Pi. 
+This is a fan speed controller for the Raspberry Pi. There is a smaller version of the same controller [here](https://github.com/koendv/minimal_raspberry_fan).
 
 ## Hat
 
