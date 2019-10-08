@@ -21,6 +21,7 @@ Quant.|Item
 The fan is 40mm, 5V DC, brushless, 2 wire, **1W max**. 
 Adafruit has two GPIO headers for Raspberry, product numbers [1992](https://www.adafruit.com/product/1992) (tall, 16.5 mm) and  [2243](https://www.adafruit.com/product/2243) (short, 5.0 mm). Choose the one that clears the heatsink of the processor. 
 ## Installation
+Enable i2c bus 1 clicking on the raspberry icon -> Preferences -> Raspberry Pi Configuration -> Interfaces -> i2c.
 If you scan the i2c bus, you ought to see the fan controller at address 0x74:
 ```
 koen@raspberrypi:~ $ sudo i2cdetect -r -y 1
