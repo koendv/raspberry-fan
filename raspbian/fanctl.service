@@ -1,0 +1,8 @@
+# install as /etc/systemd/system/fanctl.service and run
+# systemctl enable fanctl.service
+[Unit]
+Description=fan control
+[Service]
+ExecStart=/usr/local/sbin/fanctl.py
+[Install]
+WantedBy=default.target
